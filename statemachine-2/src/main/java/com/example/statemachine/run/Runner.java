@@ -25,16 +25,17 @@ class Runner implements ApplicationRunner {
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
+//
+//		Order order = this.orderService.create(new Date());
+//
+//		StateMachine<OrderStates, OrderEvents> paymentStateMachine = this.orderService.pay(order.getId(), UUID.randomUUID().toString());
+//		logger.info("after calling pay(): " + paymentStateMachine.getState().getId().name());
+//		logger.info("order: " + orderService.byId(order.getId()));
 
-		Order order = this.orderService.create(new Date());
-
-		StateMachine<OrderStates, OrderEvents> paymentStateMachine = this.orderService.pay(order.getId(), UUID.randomUUID().toString());
-		logger.info("after calling pay(): " + paymentStateMachine.getState().getId().name());
-		logger.info("order: " + orderService.byId(order.getId()));
-
-		StateMachine<OrderStates, OrderEvents> fulfilledStateMachine = orderService.fulfill(order.getId());
-		logger.info("after calling fulfill(): " + fulfilledStateMachine.getState().getId().name());
-		logger.info("order: " + orderService.byId(order.getId()));
+//		StateMachine<OrderStates, OrderEvents> fulfilledStateMachine = orderService.fulfill(6L);
+//		logger.info("after calling fulfill(): " + fulfilledStateMachine.getState().getId().name());
+//		logger.info("order: " + orderService.byId(order.getId()));
+//		StateMachine<OrderStates, OrderEvents> cancelStateMachine = orderService.cancel(1L);
 
 
 	}
