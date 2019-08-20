@@ -5,7 +5,7 @@ public class FiniteStateMachine {
 	 // 2. states
     private States[] states = {new Available(), new Borrowed(), new InRepair()};
     // 4. transitions
-    private int[][] transition = {{1,0}, {2,1}, {1,2}};
+    private int[][] transition = {{1,0}, {2,0}, {0,1}};
     // 3. current
     private int current = 0;
 
